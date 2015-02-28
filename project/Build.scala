@@ -27,7 +27,7 @@ object SqlestBuild extends Build {
     base = file("sqlest"),
 
     settings = commonSettings ++ publishingSettings ++ scaladocSettings ++ Boilerplate.settings ++ Seq(
-      moduleName := "sqlest",
+      moduleName := "sqlest-scalalogging3",
 
       libraryDependencies ++= Seq(
         "com.typesafe.scala-logging" %% "scala-logging-slf4j" % "2.1.2",
@@ -41,7 +41,7 @@ object SqlestBuild extends Build {
     base = file("extractors"),
 
     settings = commonSettings ++ publishingSettings ++ scaladocSettings ++ Boilerplate.settings ++ Seq(
-      moduleName := "sqlest-extractors",
+      moduleName := "sqlest-extractors-scalalogging3",
 
       libraryDependencies ++= Seq(
         "org.scala-lang" % "scala-reflect" % scalaVersion.value,
